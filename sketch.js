@@ -172,7 +172,7 @@ sC2.velocityY = sC2.velocityY + 0.8;
 if(mousePressedOver(start)){
   
 gameState = PLAY;
-bg2.velocityX = -6;
+bg2.velocityX = -4;
 
 }
 
@@ -1143,9 +1143,9 @@ if(mousePressedOver(leave)){
 function spawnObstacles(){
  if (frameCount % 65 === 0){
 var obstacle=createSprite(windowWidth+50,windowHeight-50,10,40);
-   obstacle.velocityX = -(6 + score/100);
-   obstacle.velocityX = -6;
-    obstacle.velocityX = -6 ;
+  // obstacle.velocityX = -(6 + score/100);
+   obstacle.velocityX = -7;
+ //   obstacle.velocityX = -6 ;
   // obstacle.debug = true;
     
     var rand = Math.round(random(1,3));
